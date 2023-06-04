@@ -14,7 +14,6 @@ export default {
       poppins: ["Poppins", "sans-serif"],
     },
     minWidth: {
-      bgImg: "23em",
       card: "13em",
     },
     width: {
@@ -41,6 +40,9 @@ export default {
       gridTemplateColumns: {
         holdings: "24em 45em",
         citation: "45em 45em",
+      },
+      translate: {
+        mid: "-50%",
       },
     },
   },

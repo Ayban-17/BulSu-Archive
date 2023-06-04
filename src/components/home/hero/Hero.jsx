@@ -11,9 +11,9 @@ const Hero = () => {
   return (
     <div className="relative">
       {/* <Fade bottom distance="3em" duration={2000}> */}
-      <img className="h-64 min-w-bgImg sm:h-auto " src={gate} alt="gate" />
+      <img className="h-64 sm:h-auto " src={gate} alt="gate" />
 
-      <div className=" absolute left-16 top-7 flex flex-col  justify-center gap-5 p-4 w-72 bg-white rounded-xl sm:top-7 md:w-search lg:w-search lg:h-64 lg:left-40 lg:top-20 lg:px-10 lg:gap-10 xl:left-60 xl:top-40">
+      <div className="absolute left-1/2 transform translate-x-mid top-7 flex flex-col  justify-center gap-5 p-4 w-72 bg-white rounded-xl sm:left-56 sm:top-7 md:w-search md:left-80 lg:w-search lg:h-64 lg:left-92 lg:top-20 lg:px-10 lg:gap-10 xl:left-96 xl:top-40">
         <div className="flex flex-col gap-4">
           <Title title="Your Online " style={styles} />
           <Title title="Literature Library" style={styles} />
