@@ -17,7 +17,7 @@ const styleMla =
 //Contents
 const content = {
   apa: {
-    title: "LEARN HOW TO CITATE A PAPER",
+    title: "LEARN HOW TO CITE A PAPER",
     text: "Write your citation in APA format",
     description:
       "The APA style manual outlines the formatting and indication requirements for references in research papers. To make sure that your research paper is easy to read and has all of the crucial information, APA provides style and writing guidelines.",
@@ -26,7 +26,7 @@ const content = {
     display: "flex-row",
   },
   mla: {
-    title: "LEARN HOW TO CITATE A PAPER",
+    title: "LEARN HOW TO CITE A PAPER",
     text: "Write your citation in MLA format",
     description:
       "MLA offers writers with a technique for citing their sources in their essays and Works Cited pages using parenthetical citation. MLA enhances writers' legitimacy by highlighting their adherence to their sources.",

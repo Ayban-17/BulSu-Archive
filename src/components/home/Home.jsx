@@ -3,6 +3,7 @@ import Hero from "./hero/Hero";
 import Holdings from "./holdings/Holdings";
 import Features from "./features/Features";
 import MostViewed from "./MostViewed/MostViewed";
+import Footer from "./footer/Footer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Holdings />
       <Features />
       <MostViewed />
+      <Footer />
     </div>
   );
 };

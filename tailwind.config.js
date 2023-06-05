@@ -9,6 +9,10 @@ export default {
       black: "#000000",
       white: "#ffffff",
       bgSearch: "#F0F2FA",
+      footerbg1: "#363949",
+      footerbg2: "#23222F",
+      footerText1: "#A3BDCC",
+      footerText2: "#DAD8D8",
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
