@@ -2,7 +2,7 @@ import Logo from "../../header/Logo";
 import { UilEnvelope, UilLock, UilEyeSlash } from "@iconscout/react-unicons";
 import "../index.css";
 import { useState } from "react";
-import GoToAction from "../reusable/goToAction";
+import GoToAction from "../reusable/GoToAction";
 import Submit from "../reusable/Submit";
 
 const logo = " text-4xl sm:text-5xl letter-shadow ";
