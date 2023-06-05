@@ -24,6 +24,7 @@ export default {
       search: "30em",
       card: "13em",
       cardxl: "20em",
+      full: "100%",
     },
     minHeight: {
       card: "15em",

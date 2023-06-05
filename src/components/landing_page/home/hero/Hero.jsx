@@ -1,4 +1,4 @@
-import gate from "../../../assets/gate.png";
+import gate from "../../../../assets/gate.png";
 // import Fade from "react-reveal/Fade";
 import Title from "../reusable/Title";
 

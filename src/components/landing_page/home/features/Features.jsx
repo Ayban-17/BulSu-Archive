@@ -3,8 +3,8 @@ import Title from "../reusable/Title";
 import Citation from "./Citation";
 
 //IMAGES
-import mla from "../../../assets/mla.png";
-import apa from "../../../assets/apa.png";
+import mla from "../../../../assets/mla.png";
+import apa from "../../../../assets/apa.png";
 
 //STYLES
 const title = "text-3xl font-bold text-center";

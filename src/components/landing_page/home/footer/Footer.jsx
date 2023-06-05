@@ -1,4 +1,4 @@
-import Logo from "../header/Logo";
+import Logo from "../../header/Logo";
 import Title from "../reusable/Title";
 import Text from "../reusable/Text";
 import Icon from "../reusable/Icon";

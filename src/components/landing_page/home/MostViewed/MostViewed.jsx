@@ -31,7 +31,7 @@ const contents = [
 
 const MostViewed = () => {
   return (
-    <section className="py-56">
+    <section className="pb-32">
       <Title title="Most Veiwed Research" style={title} />
 
       <div className="max-w-sm p-5 my-0 mx-auto md:max-w-full md:flex md:justify-center">
