@@ -110,6 +110,7 @@ const programs = [
 ];
 
 const logo = " text-4xl sm:text-5xl letter-shadow ";
+
 const Register = () => {
   const [isDisabled, setIsDisabled] = useState(true);
   const [deptSelected, setDeptSelected] = useState("0");
