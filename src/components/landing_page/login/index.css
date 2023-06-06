@@ -93,4 +93,17 @@
   text-shadow: 5px 2px 2px rgba(155, 138, 138, 0.2);
 }
 
-/* REGISTRATION */
+.register-container input,
+.register-container select {
+  font-size: 0.7rem;
+  outline: none;
+}
+
+.register-container input::placeholder,
+.register-container select {
+  color: #595a5b;
+  font-size: 0.7rem;
+}
+.register-container select {
+  padding: 1.3em;
+}

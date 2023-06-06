@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Logo from "../../header/Logo";
 import "../index.css";
 import Submit from "../reusable/Submit";
+import GoToAction from "../reusable/GoToAction";
 
 //CONTENT
 const userTypes = ["Faculty", "Focal Person", "Student"];
@@ -114,6 +115,7 @@ const Register = () => {
   const [isDisabled, setIsDisabled] = useState(true);
   const [deptSelected, setDeptSelected] = useState("0");
   const [courses, setCourses] = useState([]);
+  const [isChecked, setIsChecked] = useState(false);
   const findCourses = programs.find(
     (program, index) => index.toString() === deptSelected
   );
@@ -121,6 +123,10 @@ const Register = () => {
   const handleDeptSelected = (e) => {
     setDeptSelected(e.target.value);
     e.target.value === "" ? setIsDisabled(true) : setIsDisabled(false);
+  };
+
+  const handleCheckBox = () => {
+    setIsChecked(!isChecked);
   };
 
   useEffect(() => {
@@ -134,7 +140,7 @@ const Register = () => {
       </h1>
       <div className="z-10 register-container p-6">
         <form className="register-form flex flex-col gap-5">
-          <h1 className="w-full rounded-lg text-3xl text-white font-semibold register-label">
+          <h1 className="w-full rounded-lg text-3xl text-white font-semibold register-label ml-5">
             Register
           </h1>
 
@@ -144,9 +150,7 @@ const Register = () => {
                 required
                 className="w-full md:text-lg  text-xs px-6 py-2 rounded-lg "
               >
-                <option disabled value="">
-                  User Type
-                </option>
+                <option value="">User Type</option>
                 {userTypes.sort().map((userType, index) => {
                   return (
                     <option key={index} value={userType}>
@@ -222,9 +226,27 @@ const Register = () => {
             </div>
           </div>
 
-          <div className="w-full px-2">
-            <Submit action="Sign Up" />
+          <div className="w-full px-2 flex flex-col sm:flex-row">
+            <div className="w-full flex justify-center ">
+              <input type="checkbox" onChange={handleCheckBox} />
+
+              <GoToAction
+                text="I accept all"
+                action="Terms and Conditions"
+                link="/signin"
+                style="text-xs  whitespace-nowrap"
+              />
+            </div>
+            <div className="w-full sm:px-4 sm:ml-9 ">
+              <Submit action="Sign Up" disabled={!isChecked} />
+            </div>
           </div>
+          <GoToAction
+            text="Already a member?"
+            action="Sign In Now"
+            link="/signin"
+            style="text-xs"
+          />
         </form>
       </div>
     </main>

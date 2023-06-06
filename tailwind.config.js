@@ -8,6 +8,7 @@ export default {
       bgIcon: "#ECE9FB",
       black: "#000000",
       white: "#ffffff",
+      disabled: "#4A4A4A",
       bgSearch: "#F0F2FA",
       footerbg1: "#363949",
       footerbg2: "#23222F",
