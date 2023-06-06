@@ -6,6 +6,7 @@ import GoToAction from "../reusable/GoToAction";
 import Submit from "../reusable/Submit";
 
 const logo = " text-4xl sm:text-5xl letter-shadow ";
+
 const LogIn = () => {
   const [inputs, setInputs] = useState({ email: "", password: "" });
 
